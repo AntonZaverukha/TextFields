@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Medium.ttf">
+            <string>Rubik-Medium</string>
+        </array>
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Text_Fields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRe-AY-Kld">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO digits field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-re-P1b">
+                                <rect key="frame" x="16" y="163" width="83" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lYo-T6-FSb">
+                                <rect key="frame" x="16" y="191" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="NoDigitTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJF-do-vfv">
+                                <rect key="frame" x="16" y="280" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="InputLimitTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Input limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kre-Fz-Tzv">
+                                <rect key="frame" x="16" y="256" width="62" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="wwwww-ddddd" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRX-W6-yg0">
+                                <rect key="frame" x="16" y="369" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="InputMaskTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9f-9K-1kk">
+                                <rect key="frame" x="367" y="256" width="27" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="InputLengthLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyT-6i-V7X">
+                                <rect key="frame" x="16" y="453" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LinkTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD4-xj-Xrt">
+                                <rect key="frame" x="16" y="429" width="26" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iu6-U3-ef1">
+                                <rect key="frame" x="16" y="541" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSe-D2-W3S">
+                                <rect key="frame" x="20" y="517" width="92.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min length 8 characters." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jla-gq-cDZ">
+                                <rect key="frame" x="20" y="593" width="156" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordLengthLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min 1 digit," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fh-Fy-DPp">
+                                <rect key="frame" x="20" y="617" width="73" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordDigitsLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min 1 lowecase," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlG-Ku-PQX">
+                                <rect key="frame" x="20" y="641" width="102" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordLowerCaseLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min 1 capital required." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUo-Ih-5jo">
+                                <rect key="frame" x="20" y="665" width="140.5" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordCapitalLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Only characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBb-CV-SGc">
+                                <rect key="frame" x="16" y="345" width="96" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hvX-pF-l8p">
+                                <rect key="frame" x="16" y="573" width="379" height="2"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PasswordProgressView"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugh-2K-8V9">
+                                <rect key="frame" x="20" y="97" width="58" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TabBarButton"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Tab Bar">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8zN-hh-2Vj" kind="presentation" id="bfx-PC-Z6X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wsE-re-P1b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3PH-fg-zC5"/>
+                            <constraint firstItem="hvX-pF-l8p" firstAttribute="leading" secondItem="iu6-U3-ef1" secondAttribute="leading" id="4EB-ac-w4o"/>
+                            <constraint firstItem="VBb-CV-SGc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Po-DG-pj6"/>
+                            <constraint firstItem="SJF-do-vfv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8g1-mS-5Zf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bRX-W6-yg0" secondAttribute="trailing" constant="20" id="BVp-Rc-YQf"/>
+                            <constraint firstItem="NyT-6i-V7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Bxs-zi-wuX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t9f-9K-1kk" secondAttribute="trailing" constant="20" id="EFG-rZ-X6l"/>
+                            <constraint firstItem="SJF-do-vfv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="236" id="G94-Ue-Zrd"/>
+                            <constraint firstItem="Jla-gq-cDZ" firstAttribute="top" secondItem="iu6-U3-ef1" secondAttribute="bottom" constant="18" id="GHk-EH-pYp"/>
+                            <constraint firstItem="t9f-9K-1kk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="Gy3-N5-sVq"/>
+                            <constraint firstItem="hvX-pF-l8p" firstAttribute="trailing" secondItem="iu6-U3-ef1" secondAttribute="trailing" id="Izh-M4-LMj"/>
+                            <constraint firstItem="kre-Fz-Tzv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MyG-Zt-wvq"/>
+                            <constraint firstItem="iu6-U3-ef1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NGs-te-qWM"/>
+                            <constraint firstItem="wsE-re-P1b" firstAttribute="top" secondItem="ugh-2K-8V9" secondAttribute="bottom" constant="36" id="S0V-I2-9st"/>
+                            <constraint firstItem="lYo-T6-FSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="S9c-T0-F0V"/>
+                            <constraint firstItem="Jla-gq-cDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SqN-DK-lY8"/>
+                            <constraint firstItem="VD4-xj-Xrt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VbK-5z-sVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lYo-T6-FSb" secondAttribute="trailing" constant="20" id="aRG-QQ-GQk"/>
+                            <constraint firstItem="5fh-Fy-DPp" firstAttribute="top" secondItem="iu6-U3-ef1" secondAttribute="bottom" constant="42" id="b7v-WK-HMT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iu6-U3-ef1" secondAttribute="trailing" constant="20" id="b8e-DN-cSZ"/>
+                            <constraint firstItem="hvX-pF-l8p" firstAttribute="bottom" secondItem="iu6-U3-ef1" secondAttribute="bottom" id="bBk-dB-uvp"/>
+                            <constraint firstItem="VBb-CV-SGc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="301" id="bbC-et-GMR"/>
+                            <constraint firstItem="bRX-W6-yg0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cfR-Hv-ty6"/>
+                            <constraint firstItem="NyT-6i-V7X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="409" id="dyH-dN-7xE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SJF-do-vfv" secondAttribute="trailing" constant="20" id="e6F-ND-iwl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NyT-6i-V7X" secondAttribute="trailing" constant="20" id="eQR-ho-5ll"/>
+                            <constraint firstItem="kre-Fz-Tzv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="212" id="hfU-Vs-FeO"/>
+                            <constraint firstItem="QRe-AY-Kld" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="i3v-Ql-eqa"/>
+                            <constraint firstItem="QlG-Ku-PQX" firstAttribute="top" secondItem="iu6-U3-ef1" secondAttribute="bottom" constant="66" id="jWw-sV-Ein"/>
+                            <constraint firstItem="VD4-xj-Xrt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="k6B-Bm-JzA"/>
+                            <constraint firstItem="wsE-re-P1b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="119" id="l2L-EN-AGh"/>
+                            <constraint firstItem="iu6-U3-ef1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="497" id="nK9-jo-Kik"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QRe-AY-Kld" secondAttribute="trailing" constant="35" id="oHZ-d1-7PA"/>
+                            <constraint firstItem="bRX-W6-yg0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="325" id="owI-fS-Sl0"/>
+                            <constraint firstItem="5fh-Fy-DPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p0A-qr-eUS"/>
+                            <constraint firstItem="QRe-AY-Kld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="pQd-zw-ZVd"/>
+                            <constraint firstItem="hUo-Ih-5jo" firstAttribute="top" secondItem="iu6-U3-ef1" secondAttribute="bottom" constant="90" id="pVR-Gw-BnZ"/>
+                            <constraint firstItem="lYo-T6-FSb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="pvC-xI-LPZ"/>
+                            <constraint firstItem="QlG-Ku-PQX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rj8-f0-uB8"/>
+                            <constraint firstItem="CSe-D2-W3S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="473" id="tko-wD-606"/>
+                            <constraint firstItem="ugh-2K-8V9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ubd-MQ-obG"/>
+                            <constraint firstItem="ugh-2K-8V9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="vUS-MF-5DV"/>
+                            <constraint firstItem="hUo-Ih-5jo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xJj-jk-PyN"/>
+                            <constraint firstItem="CSe-D2-W3S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xoE-K0-7FH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eUy-Z0-xQX"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="t9f-9K-1kk" id="3vw-CI-v4k"/>
+                        <outlet property="fifthTextField" destination="iu6-U3-ef1" id="RDO-tc-Ax0"/>
+                        <outlet property="firstTextField" destination="lYo-T6-FSb" id="HG4-4T-fH8"/>
+                        <outlet property="fourthTextField" destination="NyT-6i-V7X" id="V7G-ok-3Q9"/>
+                        <outlet property="minCapitalLettersLabel" destination="hUo-Ih-5jo" id="qXe-hs-6np"/>
+                        <outlet property="minDigitsLabel" destination="5fh-Fy-DPp" id="3Vt-7D-gQN"/>
+                        <outlet property="minLengthLabel" destination="Jla-gq-cDZ" id="gvd-Oe-4bG"/>
+                        <outlet property="minLowerCaseLabel" destination="QlG-Ku-PQX" id="PIL-u6-mOE"/>
+                        <outlet property="passwordStrengthProgressView" destination="hvX-pF-l8p" id="vPd-e7-ALD"/>
+                        <outlet property="secondTextField" destination="SJF-do-vfv" id="kfh-RW-Kx5"/>
+                        <outlet property="tabBarButton" destination="ugh-2K-8V9" id="dvu-aa-eiR"/>
+                        <outlet property="thirdTextField" destination="bRX-W6-yg0" id="2Rh-Tu-5Om"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1668.1159420289857" y="-38.169642857142854"/>
+        </scene>
+        <!--Input Mask-->
+        <scene sceneID="Zzy-WU-4we">
+            <objects>
+                <viewController title="Input Mask" id="fNp-As-nAH" customClass="InputMaskViewController" customModule="Text_Fields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pTD-Gi-V4I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="wwwww-ddddd" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4D-h4-Eew">
+                                <rect key="frame" x="16" y="187" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCInputMaskTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-6Q-SxH">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-j3-LrA">
+                                <rect key="frame" x="16" y="163" width="95.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wQd-6Q-SxH" firstAttribute="top" secondItem="D65-lq-BHF" secondAttribute="top" constant="92" id="B0G-Hc-WHn"/>
+                            <constraint firstItem="D65-lq-BHF" firstAttribute="trailing" secondItem="wQd-6Q-SxH" secondAttribute="trailing" constant="35" id="Ci5-rA-C41"/>
+                            <constraint firstItem="D65-lq-BHF" firstAttribute="trailing" secondItem="A4D-h4-Eew" secondAttribute="trailing" constant="20" id="Drl-P9-G3Y"/>
+                            <constraint firstItem="ejq-j3-LrA" firstAttribute="leading" secondItem="D65-lq-BHF" secondAttribute="leading" constant="16" id="LbF-aG-gl7"/>
+                            <constraint firstItem="ejq-j3-LrA" firstAttribute="top" secondItem="D65-lq-BHF" secondAttribute="top" constant="163" id="Sah-2j-c9T"/>
+                            <constraint firstItem="A4D-h4-Eew" firstAttribute="top" secondItem="D65-lq-BHF" secondAttribute="top" constant="187" id="a0y-lQ-QMO"/>
+                            <constraint firstItem="wQd-6Q-SxH" firstAttribute="leading" secondItem="D65-lq-BHF" secondAttribute="leading" constant="36" id="bYx-Wf-gAd"/>
+                            <constraint firstItem="A4D-h4-Eew" firstAttribute="leading" secondItem="D65-lq-BHF" secondAttribute="leading" constant="16" id="vRw-VO-dNq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D65-lq-BHF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Input Mask" image="star.fill" catalog="system" id="WvG-IR-w2N"/>
+                    <connections>
+                        <outlet property="inputMaskTextField" destination="A4D-h4-Eew" id="4sj-6V-Sws"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tf-2B-yBZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="-477"/>
+        </scene>
+        <!--Password Validation-->
+        <scene sceneID="Xqb-Qu-dac">
+            <objects>
+                <viewController title="Password Validation" id="wd9-hS-Ldv" customClass="PasswordValidationViewController" customModule="Text_Fields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rp9-Xq-EW9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-cB-m37">
+                                <rect key="frame" x="16" y="187" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCPasswordTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validation rules" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRH-5q-fJy">
+                                <rect key="frame" x="16" y="163" width="92.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXp-W6-x0o">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wH0-FK-Mxg">
+                                <rect key="frame" x="18" y="219" width="378" height="2"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCPasswordProgressView"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min length 8 characters." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vw5-BN-uRg">
+                                <rect key="frame" x="20" y="229" width="156" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCPasswordLengthLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min 1 digit," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBD-sM-uXP">
+                                <rect key="frame" x="20" y="253" width="73" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCPasswordDigitsLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Min 1 lowecase," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-zL-bv7">
+                                <rect key="frame" x="20" y="277" width="102" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCLowerCaseLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="- Min 1 capital required." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oo-fi-R1v">
+                                <rect key="frame" x="20" y="303" width="140.5" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCPasswordCapitalLabel"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Y5u-cl-ZTL" firstAttribute="trailing" secondItem="5Lz-cB-m37" secondAttribute="trailing" constant="20" id="0AY-ky-4yi"/>
+                            <constraint firstItem="Xm6-zL-bv7" firstAttribute="top" secondItem="5Lz-cB-m37" secondAttribute="bottom" constant="56" id="3Rl-kG-ca6"/>
+                            <constraint firstItem="Y5u-cl-ZTL" firstAttribute="trailing" secondItem="FXp-W6-x0o" secondAttribute="trailing" constant="35" id="3wP-g5-HTv"/>
+                            <constraint firstItem="5Lz-cB-m37" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="16" id="7PZ-zG-q3h"/>
+                            <constraint firstItem="SBD-sM-uXP" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="20" id="FTG-8R-LrL"/>
+                            <constraint firstItem="5Lz-cB-m37" firstAttribute="top" secondItem="Y5u-cl-ZTL" secondAttribute="top" constant="187" id="HPX-sV-9PE"/>
+                            <constraint firstItem="wH0-FK-Mxg" firstAttribute="leading" secondItem="5Lz-cB-m37" secondAttribute="leading" constant="2" id="IeC-Zr-VM4"/>
+                            <constraint firstItem="fRH-5q-fJy" firstAttribute="top" secondItem="Y5u-cl-ZTL" secondAttribute="top" constant="163" id="IeP-rw-VpB"/>
+                            <constraint firstItem="vw5-BN-uRg" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="20" id="Nz8-dv-Wrq"/>
+                            <constraint firstItem="wH0-FK-Mxg" firstAttribute="bottom" secondItem="5Lz-cB-m37" secondAttribute="bottom" id="UEO-vA-vuN"/>
+                            <constraint firstItem="SBD-sM-uXP" firstAttribute="top" secondItem="5Lz-cB-m37" secondAttribute="bottom" constant="32" id="gUM-nt-X38"/>
+                            <constraint firstItem="wH0-FK-Mxg" firstAttribute="trailing" secondItem="5Lz-cB-m37" secondAttribute="trailing" constant="2" id="h71-FO-nA5"/>
+                            <constraint firstItem="fRH-5q-fJy" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="16" id="h7e-8u-Hwq"/>
+                            <constraint firstItem="Xm6-zL-bv7" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="20" id="htr-OM-rgm"/>
+                            <constraint firstItem="FXp-W6-x0o" firstAttribute="top" secondItem="Y5u-cl-ZTL" secondAttribute="top" constant="92" id="lLr-fk-QKI"/>
+                            <constraint firstItem="3oo-fi-R1v" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="20" id="wrO-i7-R3C"/>
+                            <constraint firstItem="FXp-W6-x0o" firstAttribute="leading" secondItem="Y5u-cl-ZTL" secondAttribute="leading" constant="36" id="yHn-bQ-7uj"/>
+                            <constraint firstItem="vw5-BN-uRg" firstAttribute="top" secondItem="5Lz-cB-m37" secondAttribute="bottom" constant="8" id="zcq-Ze-2aE"/>
+                            <constraint firstItem="3oo-fi-R1v" firstAttribute="top" secondItem="5Lz-cB-m37" secondAttribute="bottom" constant="80" id="zuy-9f-2pk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y5u-cl-ZTL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Password Validation" image="star.fill" catalog="system" id="23i-5s-vbf"/>
+                    <connections>
+                        <outlet property="minCapitalLettersLabel" destination="3oo-fi-R1v" id="KBI-lq-rfb"/>
+                        <outlet property="minDigitsLabel" destination="SBD-sM-uXP" id="EbE-96-lqe"/>
+                        <outlet property="minLengthLabel" destination="vw5-BN-uRg" id="hHN-2A-9Pf"/>
+                        <outlet property="minLowerCaseLabel" destination="Xm6-zL-bv7" id="6Pe-TR-Ipf"/>
+                        <outlet property="passwordValidationProgressView" destination="wH0-FK-Mxg" id="aIf-8Y-Swb"/>
+                        <outlet property="passwordValidationTextField" destination="5Lz-cB-m37" id="WGP-eF-dMG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOp-BM-Zuq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="-477"/>
+        </scene>
+        <!--Input Limit-->
+        <scene sceneID="ePb-5M-oqD">
+            <objects>
+                <viewController id="o4A-m8-dxH" customClass="InputLengthViewController" customModule="Text_Fields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhf-s8-YkB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-eP-H7c">
+                                <rect key="frame" x="16" y="187" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCInputLimitTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cR7-yw-naa">
+                                <rect key="frame" x="16" y="163" width="61.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-eR-oBZ">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ8-n8-Qbz">
+                                <rect key="frame" x="369" y="162" width="27" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCInputLengthLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cR7-yw-naa" firstAttribute="top" secondItem="Tw4-XG-Bb8" secondAttribute="top" constant="163" id="9yz-ou-ZSg"/>
+                            <constraint firstItem="NZE-eR-oBZ" firstAttribute="leading" secondItem="Tw4-XG-Bb8" secondAttribute="leading" constant="36" id="N4e-TP-TrO"/>
+                            <constraint firstItem="Tw4-XG-Bb8" firstAttribute="trailing" secondItem="rZe-eP-H7c" secondAttribute="trailing" constant="20" id="Zbb-7D-BBy"/>
+                            <constraint firstItem="cR7-yw-naa" firstAttribute="leading" secondItem="Tw4-XG-Bb8" secondAttribute="leading" constant="16" id="bMQ-8G-k9e"/>
+                            <constraint firstItem="NZE-eR-oBZ" firstAttribute="top" secondItem="Tw4-XG-Bb8" secondAttribute="top" constant="92" id="kBI-n6-fdn"/>
+                            <constraint firstItem="rZe-eP-H7c" firstAttribute="leading" secondItem="Tw4-XG-Bb8" secondAttribute="leading" constant="16" id="laq-Xd-tYl"/>
+                            <constraint firstItem="Tw4-XG-Bb8" firstAttribute="trailing" secondItem="NZE-eR-oBZ" secondAttribute="trailing" constant="35" id="puL-dS-vvs"/>
+                            <constraint firstItem="Tw4-XG-Bb8" firstAttribute="trailing" secondItem="hQ8-n8-Qbz" secondAttribute="trailing" constant="18" id="ysO-ng-hhE"/>
+                            <constraint firstItem="rZe-eP-H7c" firstAttribute="top" secondItem="Tw4-XG-Bb8" secondAttribute="top" constant="187" id="zdP-Hc-BKr"/>
+                            <constraint firstItem="hQ8-n8-Qbz" firstAttribute="top" secondItem="Tw4-XG-Bb8" secondAttribute="top" constant="162" id="zf2-fr-aqv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Tw4-XG-Bb8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Input Limit" image="star.fill" catalog="system" id="xcb-1U-ykz"/>
+                    <connections>
+                        <outlet property="inputLimitTextField" destination="rZe-eP-H7c" id="cdp-db-rd3"/>
+                        <outlet property="lengthCounterLabel" destination="hQ8-n8-Qbz" id="Jmu-6J-nxE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Z2-xz-90x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="218"/>
+        </scene>
+        <!--Link Recognize-->
+        <scene sceneID="RIq-M0-KQb">
+            <objects>
+                <viewController title="Link Recognize" id="1Vi-VL-V0v" customClass="LinkRecognizeViewController" customModule="Text_Fields" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azi-qs-ebF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cf-nP-A8d">
+                                <rect key="frame" x="16" y="187" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCLinkTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4h-6h-f9M">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-hu-Vmr">
+                                <rect key="frame" x="16" y="163" width="25.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vCj-RF-B2O" firstAttribute="trailing" secondItem="2cf-nP-A8d" secondAttribute="trailing" constant="20" id="1dh-EB-9v1"/>
+                            <constraint firstItem="vCj-RF-B2O" firstAttribute="trailing" secondItem="I4h-6h-f9M" secondAttribute="trailing" constant="35" id="3o7-Hu-Drh"/>
+                            <constraint firstItem="I4h-6h-f9M" firstAttribute="leading" secondItem="vCj-RF-B2O" secondAttribute="leading" constant="36" id="96n-5D-kuh"/>
+                            <constraint firstItem="Tll-hu-Vmr" firstAttribute="leading" secondItem="vCj-RF-B2O" secondAttribute="leading" constant="16" id="Ebu-mN-V3z"/>
+                            <constraint firstItem="Tll-hu-Vmr" firstAttribute="top" secondItem="vCj-RF-B2O" secondAttribute="top" constant="163" id="Jig-fc-BiX"/>
+                            <constraint firstItem="I4h-6h-f9M" firstAttribute="top" secondItem="vCj-RF-B2O" secondAttribute="top" constant="92" id="ROT-0a-Rdl"/>
+                            <constraint firstItem="2cf-nP-A8d" firstAttribute="top" secondItem="vCj-RF-B2O" secondAttribute="top" constant="187" id="jV4-FV-wpm"/>
+                            <constraint firstItem="2cf-nP-A8d" firstAttribute="leading" secondItem="vCj-RF-B2O" secondAttribute="leading" constant="16" id="zij-zC-ZHp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vCj-RF-B2O"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Link Recognize" image="star.fill" catalog="system" id="pSb-Y3-vcu"/>
+                    <connections>
+                        <outlet property="linkRecognizeTextField" destination="2cf-nP-A8d" id="IIt-G0-Y46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnS-yB-ibh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="218"/>
+        </scene>
+        <!--No digits-->
+        <scene sceneID="HXa-zM-7DO">
+            <objects>
+                <viewController id="mkd-ZO-Lzj" customClass="NoDigitsViewController" customModule="Text_Fields" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UmT-fT-G9c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Fields" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87r-g6-vGc">
+                                <rect key="frame" x="36" y="92" width="343" height="40"/>
+                                <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VDG-3Y-aKG">
+                                <rect key="frame" x="16" y="187" width="378" height="34"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TBCNoDigitsTF"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO digits field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTe-QM-DG5">
+                                <rect key="frame" x="16" y="163" width="83" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VDG-3Y-aKG" firstAttribute="top" secondItem="ZFt-AN-gMK" secondAttribute="top" constant="187" id="8F9-9I-Xdx"/>
+                            <constraint firstItem="ZFt-AN-gMK" firstAttribute="trailing" secondItem="87r-g6-vGc" secondAttribute="trailing" constant="35" id="C6X-lc-hsJ"/>
+                            <constraint firstItem="kTe-QM-DG5" firstAttribute="leading" secondItem="ZFt-AN-gMK" secondAttribute="leading" constant="16" id="HYw-it-jVm"/>
+                            <constraint firstItem="87r-g6-vGc" firstAttribute="top" secondItem="ZFt-AN-gMK" secondAttribute="top" constant="92" id="K0n-Rq-jJm"/>
+                            <constraint firstItem="87r-g6-vGc" firstAttribute="leading" secondItem="ZFt-AN-gMK" secondAttribute="leading" constant="36" id="MOe-bE-MOE"/>
+                            <constraint firstItem="ZFt-AN-gMK" firstAttribute="trailing" secondItem="VDG-3Y-aKG" secondAttribute="trailing" constant="20" id="TFy-oN-3OJ"/>
+                            <constraint firstItem="VDG-3Y-aKG" firstAttribute="leading" secondItem="ZFt-AN-gMK" secondAttribute="leading" constant="16" id="mOn-nG-eEb"/>
+                            <constraint firstItem="kTe-QM-DG5" firstAttribute="top" secondItem="ZFt-AN-gMK" secondAttribute="top" constant="163" id="pJY-5P-bcf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZFt-AN-gMK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="No digits" image="star.fill" catalog="system" id="Oxq-z2-yPO"/>
+                    <connections>
+                        <outlet property="noDigitsTextField" destination="VDG-3Y-aKG" id="oDd-Sw-Skz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8G-6y-ZgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="-477.45535714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="fdi-M4-dgx">
+            <objects>
+                <tabBarController id="8zN-hh-2Vj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QoC-Bi-O5t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mkd-ZO-Lzj" kind="relationship" relationship="viewControllers" id="8Kw-ew-31s"/>
+                        <segue destination="o4A-m8-dxH" kind="relationship" relationship="viewControllers" id="JWh-1q-wFq"/>
+                        <segue destination="fNp-As-nAH" kind="relationship" relationship="viewControllers" id="iMS-D8-XEJ"/>
+                        <segue destination="1Vi-VL-V0v" kind="relationship" relationship="viewControllers" id="Rne-wE-l2f"/>
+                        <segue destination="wd9-hS-Ldv" kind="relationship" relationship="viewControllers" id="Eab-Wr-I6d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1D4-dj-4yB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="-38"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
